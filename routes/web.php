@@ -23,9 +23,9 @@ Route::get('/producto', function () {
 Route::get('/admin', function () {
     return view('admin/index');
 });
-Route::get('/list/producto', [ProductoController::class, 'index']);
+//Route::get('/list/producto', ProductoController::class, 'index');
 Route::get('/template', function () {
     return view('template/index');
 
-Route::resource('producto', ProductoController::class){
+Route::resource('producto', ProductoController::class);
 });
